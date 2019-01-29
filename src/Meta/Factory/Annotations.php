@@ -204,8 +204,8 @@ class Annotations implements Factory
 
         // Normalize call types to global namespace
         $internalTypes = ['bool', 'boolean', 'int', 'integer', 'float', 'string', 'array', 'object', 'resource',
-            'mixed', 'self', 'static', '$this'];
-        
+            'mixed', 'self', 'static', '$this', 'DateTime'];
+
         if (!isset($var) || in_array($var, $internalTypes)) {
             return $var;
         }
